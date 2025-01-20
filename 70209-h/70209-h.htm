@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Bird in Hand: a Play in One Act | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    h1,h2,h3,h4,h5,h6 {
+    text-align: center; /* all headings centered */
+    clear: both;
+}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;
+}
+
+.p2       {margin-top: 2em;}
+.p4       {margin-top: 4em;}
+.p6       {margin-top: 6em;}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%;}
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+@media print { hr.chap {display: none; visibility: hidden;} }
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
+
+hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
+hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
+
+div.chapter {page-break-before: always;}
+h2.nobreak  {page-break-before: avoid;}
+
+ul.index { list-style-type: none; }
+li.ifrst {
+    margin-top: 1em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.indx  {
+    margin-top: .5em;
+    text-indent: -2em;
+    padding-left: 1em;
+}
+li.isub1 {
+    text-indent: -2em;
+    padding-left: 2em;
+}
+li.isub2 {
+    text-indent: -2em;
+    padding-left: 3em;
+}
+li.isub3 {
+    text-indent: -2em;
+    padding-left: 4em;
+}
+li.isub4 {
+    text-indent: -2em;
+    padding-left: 5em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table.autotable    { border-collapse: collapse; }
+table.autotable td,
+table.autotable th { padding: 0.25em; }
+
+.tdl      {text-align: left;}
+.tdr      {text-align: right;}
+.tdc      {text-align: center;}
+
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: small;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 0;
+} /* page numbers */
+
+.linenum {
+    position: absolute;
+    top: auto;
+    left: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+} /* poetry number */
+
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sidenote {
+    width: 20%;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-left: 1em;
+    float: right;
+    clear: right;
+    margin-top: 1em;
+    font-size: small;
+    color: black;
+    background: #eeeeee;
+    border: 1px dashed;
+}
+
+.bb       {border-bottom: 2px solid;}
+
+.bl       {border-left: 2px solid;}
+
+.bt       {border-top: 2px solid;}
+
+.br       {border-right: 2px solid;}
+
+.bbox     {border: 2px solid;}
+
+.center   {text-align: center;}
+
+.right    {text-align: right;}
+
+.smcap    {font-variant: small-caps;}
+
+.allsmcap {font-variant: small-caps; text-transform: lowercase;}
+
+.u        {text-decoration: underline;}
+
+
+.caption  {font-weight: bold;}
+
+
+/* Footnotes */
+.footnotes        {border: 1px dashed;}
+
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+/* Poetry */
+/* uncomment the next line for centered poetry */
+/* .poetry-container {display: flex; justify-content: center;} */
+.poetry-container {text-align: center;}
+.poetry           {text-align: left; margin-left: 5%; margin-right: 5%;}
+.poetry .stanza   {margin: 1em auto;}
+.poetry .verse    {text-indent: -3em; padding-left: 3em;}
+
+/* Transcriber's notes */
+.transnote {background-color: #E6E6FA;
+    color: black;
+    font-size:small;
+    padding:0.5em;
+    margin-bottom:5em;
+    font-family:sans-serif, serif;
+}
+
+/* overrides of basic settings */
+p { text-indent: 1.5em;}
+
+table.autotable td,
+table.autotable th { padding: .3em; }
+
+.bbox     { padding: 2em;}
+
+ul { list-style-type: none; }
+
+.footnote         {
+                   padding-left: 1.5em;
+                   text-indent: -1.5em;}
+
+/* comment the next line for non-centered poetry */
+.poetry-container {display: flex; justify-content: center;}
+
+.x-ebookmaker .poetry {display: block;}
+
+.x-ebookmaker .linenum {
+    position: absolute;
+    top: auto;
+    left: 15%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+left: 5%;
+float: left;
+clear: left;
+margin-left: -5em;
+}
+
+/* additional definitions */
+hr.double-top {width: 65%; margin-top: 3em; margin-bottom: 0.1em; margin-left: 17.5%; margin-right: 17.5%;}
+hr.double-bot {width: 65%; margin-top: 0.1em; margin-bottom: 0.5em; margin-left: 17.5%; margin-right: 17.5%;}
+
+.biblio    {list-style-type: none;
+            padding-left: 2em;
+            text-indent: -2em !important;}
+
+.noindent {text-indent: 0em}
+
+.center   {text-align: center;
+           text-indent: 0;}
+
+.credit   {text-align: right;
+           margin-top: -0.5em;}
+
+.hang { padding-left:1.5em; text-indent:-1.5em; }
+
+.ph2       {margin-top: 2em;
+           text-align: center;
+           font-size: 1.5em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+.ph3       {margin-top: 1em;
+           text-align: center;
+           font-size: 1.2em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+
+.ml       {margin-left: 1em;}
+
+.front {text-align: center;
+        text-indent: 0;
+        max-width: 40em;
+        margin: auto;}
+
+.x-ebookmaker .hide {visibility: hidden;}
+
+
+/* Fonts */
+.cursive {font-family: "Brush Script MT", cursive; }
+.simple {font-family: Verdana, sans-serif; }
+.mono {font-family: Courier, monospace; }
+.fancy {font-family: Luminari, Impact, fantasy; }
+
+.xbig {font-size: 2em;}
+.big {font-size: 1.2em;}
+.small {font-size: 0.8em;}
+
+    </style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of Bird in Hand, by Laurence Housman</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:1em; margin-left:2em; text-indent:-2em'>Title: Bird in Hand</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Laurence Housman</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: March 5, 2023 [eBook #70209]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: Charlene Taylor, Krista Zaleski and the Online Distributed Proofreading Team at https://www.pgdp.net (This file was produced from images generously made available by The Internet Archive/American Libraries.)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK BIRD IN HAND ***</div>
+
+<h1>  Bird in Hand: A Play
+  in One Act: by Laurence
+  Housman</h1>
+
+
+<p class="center">  <span class="xbig">Samuel French: Publisher</span><br>
+  <span class="big">28-30 West Thirty-eighth St.: New York</span><br>
+  <span class="big">Samuel French, Ltd.</span><br>
+  <span class="smcap">26 Southampton Street, Strand</span><br>
+  LONDON<br>
+  <span class="big">PRICE 35 CENTS</span>
+</p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+
+
+<p class="center p6 small">  Copyright, 1916</p>
+
+<p class="center">  By LAURENCE HOUSMAN</p>
+</div>
+
+<p class="p6 small noindent">CAUTION——Amateurs and Professionals are hereby
+  warned that “BIRD IN HAND,” being fully protected
+  under the copyright laws of the United States, is subject
+  to royalty, and any one presenting the play without
+  the consent of the author or his authorized agent,
+  will be liable to the penalties by law provided. Application
+  for the right to produce “BIRD IN HAND”
+  must be made to Samuel French, 28-30 West 38th St.,
+  New York City.</p>
+
+<p class="center">  ALL RIGHTS RESERVED.
+</p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak" id="BIRD_IN_HAND">BIRD IN HAND.</h2>
+</div>
+
+
+<hr class="r5">
+
+<h2 class="nobreak" id="DRAMATIS_PERSONAE">DRAMATIS PERSONAE.</h2>
+
+
+<table class="autotable">
+<tr>
+<td class="tdl"> <span class="smcap">Professor Braintree</span></td>
+<td class="tdr"> <i>A famous scientist</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Miss Tuckey</span></td>
+<td class="tdr"> <i>His secretary</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Dr. Locum</span></td>
+<td class="tdr"> <i>His medical attendant</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Elfrida</span></td>
+<td class="tdr"> <i>His granddaughter</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Bird-in-Hand</span></td>
+<td class="tdr"><i>A thing to be explained</i></td>
+</tr>
+</table>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<span class="pagenum" id="Page_5">[Pg 5]</span>
+
+
+<h2 class="nobreak" id="BIRD_IN_HAND1">BIRD IN HAND</h2>
+</div>
+<hr class="r5">
+
+<p class="hang"><span class="smcap">Scene</span>:—<i>You are looking into the study of a
+Scientist—a large room lined with books and specimen cases.
+At the back are two upright windows, through which one sees
+a green bowery garden, suggestive of quiet and seclusion.
+In one window stands a case of stuffed birds, in the other
+a microscope. Near the center of the room is a ponderous
+writing-table, above which hangs an adjustable light, presided
+over by a large green shade. Adjoining the writing-table is a
+smaller one, on which stands a typewriter. All about the room,
+on tables and systematically arranged, and suggestive of the
+strict order imposed by a meticulous mind. There is one door to
+right, another to left, the latter leading to an inner chamber.
+On the writing-table lie papers and a portable speaking-tube.
+A telephone, a waste-paper basket, and a revolving book-stand
+are within easy reach of the</i> <span class="smcap">Professor’s</span> <i>chair,
+while behind it is a screen partly covering the door leading
+to the inner chamber. On the opposite side, between the other
+door and the window, stands a large chest. It is morning,
+and through half-lowered green blinds sunlight streams over
+the replete and comfortable interior, touching to brightness
+the polished metal of the microscope, and the plumage of the
+stuffed birds.</i></p>
+
+<div class="blockquot">
+<p><i>At the small table, on a chair less comfortable than the
+one at the writing-desk sits an<span class="pagenum" id="Page_6">[Pg 6]</span> old gentleman in an affluent
+dressing-gown of deep rich tones, dividing his attention
+between a bowl of “Benger’s Food” and the typewriter, at
+which he clicks with portentous gravity and occasional pauses
+in the fingering. He is evidently inexpert, perhaps through
+short-sightedness; but the typewriter helps him to feel, even
+in his study, that his words are destined for print and the
+laying-down of the scientific law for the generations to come
+after.</i></p>
+
+<p><i>The clock on the chimney-piece, a skeleton of severe
+design, with the workings of its metal bowels immodestly
+exposed, strikes eleven. This seems to be a signal to a mind
+methodically trained. The</i> <span class="smcap">Professor</span> <i>consults
+his watch, starts, looks reproachfully at the clock, then quits
+the typewriter, picks up his bowl of Benger, and spooning
+from it on the way goes to the speaking-tube, which having
+unstopped, he breathes into. The exertion sets him coughing;
+but he does this, like most other things, patiently and
+methodically. After listening at the tube he speaks down it,
+and you hear a bisected conversation.</i></p>
+</div>
+<p><span class="smcap">Professor Braintree.</span> Is that you, Miss Tuckey?—Yes, I’m
+ready for you—I’m ready, I say—if you will, please. Yes. (<i>He
+starts to put on the stopper again; then, as an after-thought</i>)—Oh!
+Miss Tuckey—Are you there?—Tut! Tut! Why does the woman hurry so?
+(<span class="smcap">He</span> <i>gets up a little testily to remove his Benger bowl to a
+side-table, and progressing with very short steps places it unsecurely
+on a projecting book whence it falls and breaks</i>. <span class="smcap">He</span>
+<i>accepts the fact philosophically so far as infirmity will allow; but
+there is a gentle querulousness in his tone as he says—</i>) There,
+there! Oh dear!—(<i>And leaving the fragments to lie, returns to his
+place. There he stands for a moment,<span class="pagenum" id="Page_7">[Pg 7]</span> and looking back reproachfully,
+removes from his eyes the highly magnifying reading-glasses which were
+the cause of the mishaps. He replaces them by another pair which permit
+a wider range of vision. Through these he is able to contemplate the
+entrance of</i> <span class="smcap">Miss Tuckey</span>, <i>a subdued machine of a woman
+who accepts, without kick of any kind, the mould she has been poured
+into.)</i></p>
+
+<p><span class="smcap">Miss Tuckey.</span> Good-morning, Sir.</p>
+
+
+<p class="hang">(<i>Like a well-fed fish catching at a fly from mere habit,
+the</i> <span class="smcap">Professor</span> <i>engulfs and returns the
+salutation by an inaudible movement of the lips</i>.)</p>
+
+<p><span class="smcap">Professor.</span> Miss Tuckey, there is something broken over there,
+will you please see it removed? And will you kindly make a note to
+write to Messrs. Spink and Wedge, and say that these new glasses don’t
+suit me—I find them very trying to the—(<i>About to say “temper,” he
+substitutes</i>)—to the eyes. And I must ask you to fetch those proofs
+which came yesterday. I tried to catch you just now, but you had gone.</p>
+
+
+<p class="hang">(<i>In this statement there is a note of rebuke for a too
+precipitate obedience to summons. But by the foresight of</i>
+<span class="smcap">Miss Tuckey</span>, <i>the proofs are there; she deposits
+them in front of him.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Oh, very well. Thank you. Any letters? (<i>Those
+also she deposits, in two heaps, the business ones opened, the private
+and personal untouched</i>) When did these come?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Most of them last night, sir, after you had gone
+to bed.</p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor</span>, <i>tentatively inspecting them,
+remembers that he must change his glasses again. The magnifying
+lens proves informative.</i>)</p>
+
+<p><span class="pagenum" id="Page_8">[Pg 8]</span></p>
+
+<p><span class="smcap">Professor.</span> Ah! here is one from Miss Elfrida, I see.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> (<i>As she collects and removes the fragments of
+the Benger’s Food bowl</i>) That only came this morning.</p>
+
+<p><span class="smcap">Professor.</span> Wasn’t she to be back to-day?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Yes. They are expecting her quite soon. About
+twelve, I believe. (<i>The</i> <span class="smcap">Professor</span> <i>looks at his
+watch, and then remembers that he has fault to find with the clock, and
+incidentally with her</i>)</p>
+
+<p><span class="smcap">Professor.</span> That clock is three quarters of a minute slow, Miss
+Tuckey. (<span class="smcap">Miss Tuckey</span> <i>at once goes to correct it</i>) It
+should now be at four and a quarter minutes past. A clock that loses
+time is so disturbing—especially when it strikes. It puts me out of my
+stride for the rest of the day. (<span class="smcap">He</span> <i>begins looking at his
+correspondence</i>) And now, if you will attend to <i>me</i>! (<span class="smcap">Miss
+Tuckey</span> <i>is already standing meekly to attention</i>) You have
+your notebook?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Yes, sir.</p>
+
+<p><span class="smcap">Professor.</span> Take this, then! (<span class="smcap">He</span> <i>consults
+once more the letter which he has picked up from his opened
+correspondence</i>)—“Mr. James Pomeroy.” (I <i>think</i> it is
+Pomeroy)—He writes on good note-paper with a crest; I suppose I must
+answer him. “Dear Sir”—Oh! while I think of it, make a note that the
+extra plates for the new edition of “Objective Science” have not come
+through as advised; and they must not go to press till I have passed
+them. What have you got?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> “Mr. James Pomeroy, Dear Sir.”</p>
+
+<p><span class="smcap">Professor.</span> No, better make it “Sir.” These parasitic
+correspondents ought not to be encouraged. “I beg to acknowledge
+receipt”—no, “I <i>have</i> to acknowledge”—<i>have</i>—“the receipt
+of your letter”—date so and so. “With the proposition therein set
+forth, I cannot find myself in agreement. The limits<span class="pagenum" id="Page_9">[Pg 9]</span> of sensory
+receptivity are patent to every scientist.”</p>
+
+<p><span class="smcap">Miss Tuckey.</span> The limits of what?—I beg pardon.</p>
+
+<p><span class="smcap">Professor.</span> “Sen-sory re-ceptivity”—in other words, the
+receptivity of the senses. “That fact, however, does not provide
+any legitimate ground for a belief in those magical or supernatural
+occurrences through which, as I apprehend, you seek to counter-balance
+the deductions of science. I find no reason to doubt that however
+much still lies beyond the apprehension of our senses, it must all
+nevertheless be within the range of a scientific explanation. I am,
+Sir, yours faithfully”—(<i>He takes up another letter</i>) Oh,
+that is from Messrs. Moody &amp; Prose. Just say “received,” and have
+made a note. This is to take the chair at the International Science
+Conference for the discussion on the “Homology of the Invertebrates.”
+Say I accept the honor and am their obedient servant—That is, no.
+That is “no”—(<i>He hands letter</i>) That impertinence you need not
+answer—And now, take this—“Mrs. Daphnephoria Brown—the Seminary,
+Brunswickville, Connecticut”—“My Dear Madam, Your very flattering
+proposal to arrange a compendium from my various studies in Objective
+Science, entitled ‘Sufficient unto the Day,’ and intended to provide
+a basis for the accurate biological training of the very young, gives
+gratifying evidence of the interest you take in and the value which you
+attach to my literary labors. I am inclined, however, to think that
+the terminological exactitude so necessary to scientific statement
+could not be accommodated to the range of the child-mind without a
+certain damage to the content”—Of course, that means to the scientific
+content, not to the child’s mind. No, no, don’t take that! That was
+only commentary—“Should I, on later consideration, see any possible
+adjustment of my works to your proposed scheme I shall not fail to
+communicate with you further in the<span class="pagenum" id="Page_10">[Pg 10]</span> matter. I am, dear Madam, yours
+very truly”—That you can destroy, and the address you need not keep.
+(<span class="smcap">He</span> <i>hands over the letter to</i> <span class="smcap">Miss Tuckey</span>)
+And I think that is all—Oh, will you fetch me the file of Professor
+Lake Jones’ articles on the “Rudiments of Corpuscular Gravity” which
+appeared in last year’s “Science Journal.” You will find it in the
+Press Bureau, I think, under “R.” (<span class="smcap">Miss Tuckey</span> <i>goes to
+look for the file in the small inner chamber, from which, as she opens
+the door, comes a brighter light of day than enters the study through
+the tempering green blinds</i>) And now for Elfrida. (<i>He opens
+letter</i>) Well, well, well! What is she sending me this botanical
+specimen for, I wonder? It looks like a leaf of the Hornbean—Carpinus
+Betulus, if I am not mistaken. (<i>He examines the leaf, then lays
+it down and returns to the letter</i>) Dear me! The child has such a
+hand-writing that I can’t read a word of it. Miss Tuckey, your eyes are
+better than mine, will you kindly read me this letter?</p>
+
+
+<p class="hang">(<span class="smcap">Miss Tuckey</span> <i>has returned with the required file.
+She puts it down and takes up the letter.</i>)</p>
+
+<p><span class="smcap">Miss Tuckey.</span> “Dearest Grandpapa”——</p>
+
+<p><span class="smcap">Professor.</span> Yes, yes, I read that.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> “I am coming back to-morrow—I have had a lovely
+time. So did Benjy: we went everywhere together, but he always would go
+into the water, and I had to stay out——”</p>
+
+<p><span class="smcap">Professor.</span> Benjy is the dog, I believe.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> “That was wrong of him, wasn’t it?— To-day in
+the wood I saw a tree full of fairies, it was wonderful. But when I
+came they all climbed up and hid behind the leaves, so I wasn’t able to
+catch one. But I send you a leaf off the tree, so as to show it was a
+real one, and not what you call my ‘magination’——”</p>
+
+<p><span class="pagenum" id="Page_11">[Pg 11]</span></p>
+
+<p><span class="smcap">Professor.</span> Oh, so that’s what the botanical specimen is for,
+is it?—Yes?——</p>
+
+<p><span class="smcap">Miss Tuckey.</span> “Please keep it till I come, then I will tell you
+all about it——”</p>
+
+<p><span class="smcap">Professor.</span> Miss Tuckey, I wish you would not leave that door
+open! There’s a dreadful draught at my back.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> It isn’t open sir.</p>
+
+<p><span class="smcap">Professor.</span> Well, there’s a draught somewhere—Quite a wind!
+It seemed to come all of a sudden; and there! it has blown away Miss
+Elfrida’s leaf that was here a moment ago. (<span class="smcap">He</span> <i>friggles and
+moves his head uneasily, as though the draught still afflicted him</i>)
+You had better rearrange that screen. Well, is that all the letter?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Yes, sir, except she sends her love.
+(<span class="smcap">She</span> <i>goes and re-arranges the screen</i>)</p>
+
+<p><span class="smcap">Professor.</span> Very well. That is all, thank you, for the present.
+Just draw down those blinds before you go. The light is too strong, it
+tries my eyes. (<span class="smcap">Miss Tuckey</span> <i>lowers the blinds</i>) I should
+be glad to have that article for Hibbered’s copied before post-time.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Certainly, sir.</p>
+
+<p><span class="smcap">Professor.</span> And when Miss Elfrida comes will you send her up to
+me?</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Yes, sir.</p>
+
+
+<p class="hang">(<i>She collects her papers and goes out, and the</i>
+<span class="smcap">Professor</span> <i>settles to his writing. Putting aside</i>
+<span class="smcap">Elfrida’s</span> <i>letter, conspicuous by reason of its
+being written on pink paper, reminds him of the vanished leaf.
+He gives a momentary look for it to right and left: but the
+thing is unimportant, and dismissing it, he gets to work. This
+so entirely absorbs him that he is unaware of being looked
+at. Above the top of the writing-table a pair of strange eyes
+gradually emerge. Dark and insect-like, they stare at him<span class="pagenum" id="Page_12">[Pg 12]</span>
+out of a small green face, sharp, queer, and suggestive of a
+brain with a vivacious but detached standpoint. Out of the
+head sprout long horns or antennae; the creature is a curious
+mixture of beetle, bird, and grasshopper. Its color from head
+to foot is bright green. Fixing on the</i> <span class="smcap">Professor</span>
+<i>a stare of uninformed and quite unintelligent interrogation,
+it moves slowly round the writing-table till it stands opposite
+to him. Presently it smacks its lips, and begins a soft jabber
+to itself, not much louder than the whip of leaves on a
+window-pane.</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Quit-a-quit! Quit-a-quit! Quit-a-quit!</p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor</span>, <i>thinking he hears something,
+looks up through his reading-glasses, and cannot believe his
+eyes. At once his grievance is against the optician.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Really!—these glasses!—How they do strain one’s
+eyes! (<span class="smcap">He</span> <i>takes them off, and puts on his distance-glasses;
+but the apparition remains, vibrating up and down on its toes as though
+rather pleased with itself. The</i> <span class="smcap">Professor</span> <i>considers
+it from a variety of attitudes, and with a growing apprehension
+that he really is seeing something</i>) Dear me, now! This is most
+extraordinary!—It almost makes me believe my eyes. (<i>He endeavors to
+reconstruct his thoughts on scientific lines</i>)—Now, let me think,
+let me think! How many cups of green tea did I have this morning?</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Sik-silk-silk-silk-silk-silk-silk!</p>
+
+<p><span class="smcap">Professor.</span> Six, I believe it was!—Did that thing speak? (<i>A
+pause</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> (<i>With a slow, meditative, rather plaintive
+introduction</i>) Chwee-e-weet!</p>
+
+<p><span class="smcap">Professor.</span> But, but this is an hallucination!</p>
+
+<p><span class="pagenum" id="Page_13">[Pg 13]</span></p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chich-a-wee!</p>
+
+<p><span class="smcap">Professor.</span> An hallucination, I say!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chich-a-wee!</p>
+
+<p><span class="smcap">Professor.</span> (<i>Trying to reject the evidence of his
+senses</i>) No, no, no!—I must be ill!—Over-work!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chip-chip-chip-chip-chewee-e-e!</p>
+
+<p><span class="smcap">Professor.</span> What—Am I going out of my senses? (<span class="smcap">He</span>
+<i>makes a dive for the telephone</i>) Station 1228, please—yes! 1
+double 2, 8!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Two-eight! Two-eight!—Eight! eight! eight!
+eight! eight! eight!</p>
+
+
+<p class="hang">(<i>The note is still slow and plaintive, but the</i>
+<span class="smcap">Professor</span> <i>gets more and more frightened.</i>)</p>
+
+<p><span class="smcap">Professor.</span> I can’t bear this; I can’t bear it!—My nerves
+won’t stand it!——</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chip it!—Chip it!</p>
+
+
+<p class="hang">(<i>The ’phone calls him.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Is Doctor Locum—? Oh, Doctor, is that you?—Will
+you, please, come and see me at once?—Braintree—Professor Braintree.
+Yes—most urgent—I’m afraid I’ve, I’ve—broken down.</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> What? What? What? What? What?</p>
+
+<p><span class="smcap">Professor.</span> No, no, a blood-vessel!—But do come
+immediately!—<i>Yes.</i> Don’t lose a moment, I beg—Good-bye——</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Sh-sh-sh-wee! Sh-sh—sh-wee!—Oh, why?—Oh,
+why?—Oh, why?—Spit-it-out! Spit-it-out!</p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor</span> <i>with a gorgonized stare has
+been trying to rule the thing out; now by a firm effort of will
+he seeks to dismiss it from his mind.</i>)</p>
+
+<p><span class="pagenum" id="Page_14">[Pg 14]</span></p>
+
+<p><span class="smcap">Professor.</span> No, no, it’s not there! I don’t see it, I don’t see
+it, I don’t see it. I——</p>
+
+
+<p class="hang">(<i>But he does see it; that’s the trouble. It advances its
+head slowly towards him, then draws it back again, and with
+a more cheerful note than before, as if to encourage him,
+remarks</i>:)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Che-wit!</p>
+
+
+<p class="hang">(<i>At this the</i> <span class="smcap">Professor</span> <i>shuts his eyes, and
+continues to exercise his will-power, under conditions which
+make the assertion more tenable.</i>)</p>
+
+<p><span class="smcap">Professor.</span> I don’t see it and I won’t see it! I won’t see
+it!—I—I dismiss it entirely from my mind. It isn’t there! (<i>While
+he is thus tackling the problem the creature shifts its position, and
+now standing at his back, views him from a fresh standpoint with the
+same blank stare of a curiosity that comprehends nothing. The</i>
+<span class="smcap">Professor</span> <i>opens his eyes again. Will-power has apparently
+prevailed. He no longer sees the object of his aversion</i>) That’s
+better! (<i>He begins cautiously to turn his head first to right then
+to left. It gives him a great start to find the green horned creature
+close behind him. This is too much like having a caterpillar down his
+back for equanimity. Irrepressibly he jumps up</i>)</p>
+
+<p><span class="smcap">Professor.</span> Get out!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Che-wee—che-wee—chewee—chewee—chewee!
+(<i>The creature flies off crying like a startled black-bird. The</i>
+<span class="smcap">Professor</span>, <i>seeing that it responds to voice and gesture,
+tries driving it</i>)</p>
+
+<p><span class="smcap">Professor.</span> Shoo! Shoo, get out with you! Scat! But no, no, I
+mustn’t do that! If I do that, I shall end by making myself think it
+exists. No, I must endeavor to dismiss it from my mind. There! There!
+Now it’s gone.</p>
+
+<p><span class="pagenum" id="Page_15">[Pg 15]</span></p>
+
+
+<p class="hang">(<i>Leaning his head on his hand, he sits with munching mouth,
+wriggling nervously in his seat. Meantime the creature, sliding
+alongside the table, and touching things tentatively with its
+claw-like fingers, lights on the typewriter. As the click of
+the instrument catches its fancy, it makes a scrambling attack
+upon the keys with accompanying noise curiously resembling the
+well-known saw</i>: “<span class="smcap">Peter Piper</span> <i>picked a peck
+of pickled pepper corns</i>.” <i>That, however, is merely
+coincidence—the sounds it emits being merely a running
+commentary on the letter P.</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span>
+Peet-a-pipe!—Pick-a-peck—Pick-a-peppa-kum!—E-peet-a-pipe—a
+pick-a-pick—a-pick-a-pepp a-kum. Wees-a-peck, a pick-a-peppa-kum.
+Peet-a-pipe-a-pick!</p>
+
+
+<p class="hang">(<i>At this outburst of oratory the</i> <span class="smcap">Professor</span>,
+<i>after sitting spellbound for a moment, makes a vicious
+flick with his handkerchief, and the green imp ducks and
+disappears.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Well—I—hope I’m better! (<i>This hope is almost
+at once put to rout. The</i> <span class="smcap">Professor</span> <i>apprehensively
+snatches back his feet from the knee-hole of the writing-table, and his
+brain is once more seized by panic</i>) Oh! I felt it! I felt it—I’m
+out of <i>all</i> my senses now!—If this keeps on much longer, I shall
+go stark staring mad!</p>
+
+
+<p class="hang">(<i>But now the creature’s interest is diverted elsewhere.
+Rising and pirouetting across the room, it comes suddenly
+upon the case of stuffed birds, and stands transfixed with
+astonishment. These frozen bits of bird-life seem to baffle its
+wits. It taps the glass-case, and after a close scrutiny<span class="pagenum" id="Page_16">[Pg 16]</span> tries
+with sounds and a flapping motion of the hands to coax the
+occupants back to life.</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chich-a-wee! Chich-a-wee!—Tweet, tweet!
+Wee-wee-wee! Chick-a-wake!—Oh, why?—Tickle ’em up! Too-to-weet!
+Too-to-weet!—Eat, eat, eat, eat, eat, eat! Quick, quick! Josophat!
+Josophat! Whit-a-woo?—Drink-and-eat! Tr-r-r-r-r-r-r-r!</p>
+
+<p><span class="smcap">Professor.</span> Oh! But this is horrible!—It’s true! It <i>really
+exists</i>! (<i>He sits petrified</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Tr-r-r-r-r-r-r-r!</p>
+
+<p><span class="smcap">Professor.</span> And <i>I</i> don’t!—I <i>don’t</i>!—I
+<i>don’t</i>!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Cheer-up! Cheer-up! Cheer-up!—Oh, why?
+(<i>Petrifaction gives way to fury</i>)</p>
+
+<p><span class="smcap">Professor.</span> Stop it! Stop it, I say! (<i>He picks up a pamphlet
+and throws it with random aim, this hit-or-miss has little effect. A
+deep sadness at its failure to rouse the birds has taken the tree imp.
+Crying in a low plaintive note it turns towards him</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Wee-wee! wee-wee-wee!</p>
+
+
+<p class="hang">(<i>It advances slowly towards him. The</i> <span class="smcap">Professor</span>
+<i>makes a grab at the speaking-tube, and blows, then speaks
+down it</i>.)</p>
+
+<p><span class="smcap">Professor.</span> Miss Tuckey, are you there! Miss Tuckey!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> (<i>Halting for a moment</i>) Tuckey, tuckey,
+tuckey—Tuck!—tuck!—tuck!</p>
+
+<p><span class="smcap">Professor.</span> Would you come up, please, for one moment!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> (<i>Secretively</i>) Sh—sh—wee! (<i>As if on a
+tour of exploration, it disappears behind the screen at his back</i>)</p>
+
+<p><span class="smcap">Professor.</span> Now I shall know whether I am mad or not. Yes,
+I shall know!—(<i>Enter</i> <span class="smcap">Miss Tuckey</span>. <i>The</i>
+<span class="smcap">Professor</span> <i>faces her in some confusion. The relief of her
+presence lets him down and it is hard<span class="pagenum" id="Page_17">[Pg 17]</span> for him to collect his wits</i>)
+I—I—I want you to see that those proofs go, Miss Tuckey—by the first
+post.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Yes, sir—(<i>She looks a little surprised and
+nonplussed</i>) Did you want anything else, sir?</p>
+
+<p><span class="smcap">Professor.</span> Oh, well, and if you would kindly rearrange that
+screen? I still feel rather a draught.</p>
+
+
+<p class="hang">(<span class="smcap">Miss Tuckey</span> <i>goes and readjusts the screen.
+It is evident that, as she goes behind it, no apparition
+confronts her; she emerges as machine-like as ever, calm and
+collected.</i>)</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Will that be as you wish?</p>
+
+<p><span class="smcap">Professor.</span> Thank you.</p>
+
+<p><span class="smcap">Miss Tuckey.</span> Is that all, sir?</p>
+
+<p><span class="smcap">Professor.</span> Yes, that is all. (<i>He looks cautiously round,
+and as she goes out gets up and looks behind the screen himself.
+Nothing is there</i>) But this is horrible! I saw it! Oh! if I didn’t
+see it, I’m going mad!</p>
+
+
+<p class="hang">(<i>Almost immediately in another part of the room the
+apparition re-appears.</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Peweet, peweet! Chus-luk-a-mee! Chus-luk-a-mee!</p>
+
+
+<p class="hang">(<i>With this, the spring cry of the peewit, sounding so much
+like “Just look at me!” it displays a hitherto unsuspected
+power of levitation in a series of surprising bounds into air,
+as though its feet went up from spring-boards.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Ah! Now then! Now!</p>
+
+
+<p class="hang">(<i>From a corner rack behind him the</i> <span class="smcap">Professor</span>
+<i>snatches a large green butterfly net, and for a few
+moments you have the degrading spectacle<span class="pagenum" id="Page_18">[Pg 18]</span> of an eminent
+scientist, pursuing on the material plane something which he
+does not really believe to exist. But the pursuit soon ends.
+The imp is too agile, the pace is too killing, and the</i>
+<span class="smcap">Professor</span> <i>in his stumbling course has knocked
+over a number of things that he did not intend to. Exhausted,
+he sits down again to breathe. Once more the creature has
+disappeared. Thus momentarily relieved, he perceives the
+disarray into which the chamber has been thrown, and proceeds
+to pick things up. Apparently from its place of concealment the
+creature is watching him, for almost immediately he hears its
+voice.</i>)</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Pick-it-up! Pick-it-up!</p>
+
+
+<p class="hang">(<i>To be thus ordered about by an apparition is trying to
+the</i> <span class="smcap">Professor’s</span> <i>temper. He slaps down his
+gleanings on the table, and makes a second grab for the
+butterfly net.</i>)</p>
+
+<p><span class="smcap">Professor.</span> No—no, I mustn’t do that: it’s no good. I must
+think!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Think—think—think—think—think!</p>
+
+<p><span class="smcap">Professor.</span> I will just go on with my writing——</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Do it!—do it!—do it!</p>
+
+<p><span class="smcap">Professor.</span>—as if nothing had happened at all—Perhaps it
+hasn’t! (<i>But again the creature has reappeared</i>) Oh, <i>do</i>
+get away!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> Chich-a-wee! Che-wee! (<i>Realizing it is not
+wanted, it roams off and begins once more to inspect the room. Before
+long it runs its finger down a pile of papers high up on a shelf,
+and the papers tip over and fly out across the floor. Fleeing before
+them</i>) Che-wee—Che-wee—Che-wee, Che-wee—Che-wee!</p>
+
+<p><span class="pagenum" id="Page_19">[Pg 19]</span></p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor</span> <i>is now so angry that he
+has left off being frightened. He jumps up to rescue his
+papers.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Hallucination, you are a perfect nuisance!</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> (<i>Coaxingly</i>) Che-wee-wee?</p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor</span> <i>collects the strewn papers
+from the floor; and as he goes about gathering them up, the
+creature follows him, with round inquisitive eyes at all he
+does. He opens chest and begins to deposit the papers inside.
+Curious to spy into this new interior, the creature stretches
+out a hand.</i>)</p>
+
+<p><span class="smcap">Professor.</span> (<i>Very irritably</i>) Why can’t you let things
+alone?</p>
+
+<p><span class="smcap">Bird-in-Hand.</span> (<i>Derisively</i>) <i>Chich-e-wee!</i>
+(<i>With a sportive dive it plunges into the chest, tossing up the
+loosely arranged papers into fresh confusion. On this last bit of
+exasperating frivolity the</i> <span class="smcap">Professor</span> <i>slams down the
+lid, and locks it; and the tree imp is boxed up within. It takes him
+a moment or two to realize his triumph. It is a little difficult,
+indeed, to know on what lines to take it. Has the locking of the chest,
+with the hallucination inside, disposed of the hallucination? His
+doubt is solved almost at once, for from the inside of the chest the
+hallucination once more becomes audible</i>) What? What? What?—I say!
+Let it out! Let it out! Quick! Quick!—-Oh, why?—(<i>A pause. The</i>
+<span class="smcap">Professor</span> <i>stands considering; he has the key. He retreats
+toward the table, and lays it down. The chest continues to give forth
+sound. A tapping begins upon the lid, and in a gradual diminuendo the
+chattering goes on. The</i> <span class="smcap">Professor</span> <i>dips a pen, and tries
+to resume his writing, but his interest is still held</i>) I say! I
+say! I say! Pick it<span class="pagenum" id="Page_20">[Pg 20]</span> out! Pick it out! What? What?—What? What?—What?
+What? What? What? What? What?—Tweet-weet! wee, wee, wee, wee! Oh,
+why?—What?—Oh, why?—What?—Oh, why?</p>
+
+
+<p class="hang">(<i>The sound is now so faint that the</i> <span class="smcap">Professor</span>
+<i>can scarcely hear. He again dips his pen and resolutely
+starts writing. There comes another “Oh, why” which he does not
+hear. His nerves are recovering somewhat, encouraged by the
+ensuing silence; but he gives a sharp start when the whistle of
+the speaking-tube blows. He unstops it and listens.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Oh, yes. Will you ask him to wait one moment?
+(<i>He gets up and goes cautiously toward the chest, stops and listens
+at it for a moment, with apprehension that turns to a sort of doubtful
+relief</i>) Nothing, nothing there, at all! (<i>Nevertheless, he gives
+a last look of suspicion, and pauses one last second before again
+applying his mouth to the speaking-tube</i>) Ask Dr. Locum to come up.
+(<i>Catching sight of the butterfly net, he goes to put it away, and
+has just done so when the</i> <span class="smcap">Doctor</span> <i>enters.</i>)</p>
+
+<p><span class="smcap">Doctor.</span> How are you, Professor? Nothing very serious, I hope—</p>
+
+
+<p class="hang">(<span class="smcap">The Professor</span> <i>holds himself in. He is now feeling
+a little aggrieved at the shock he has experienced.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Doctor, I—I want you to examine me, before
+I—before I say anything.</p>
+
+<p><span class="smcap">Doctor.</span> Examine you?—in what way?</p>
+
+<p><span class="smcap">Professor.</span> Just find out my symptoms—my state of health,
+generally.</p>
+
+<p><span class="smcap">Doctor.</span> Well, Professor, let’s see the tongue! Then I’ll take
+your temperature—Sleep well?</p>
+
+<p><span class="pagenum" id="Page_21">[Pg 21]</span></p>
+
+<p><span class="smcap">Professor.</span> Much as usual.</p>
+
+<p><span class="smcap">Doctor.</span> Appetite good?</p>
+
+<p><span class="smcap">Professor.</span> Yes—fairly. (<i>At this moment in goes the
+thermometer, and the</i> <span class="smcap">Professor</span> <i>becomes temporarily
+speechless. The</i> <span class="smcap">Doctor</span> <i>feels his pulse, looking at his
+watch meanwhile</i>)</p>
+
+<p><span class="smcap">Doctor.</span> Hours? Have you been keeping late hours?</p>
+
+<p><span class="smcap">Professor.</span> M—m! (<i>Assisted by gestures this sound stands
+for “no”</i>)</p>
+
+<p><span class="smcap">Doctor.</span> Everything quite regular—as usual?</p>
+
+<p><span class="smcap">Professor.</span> M—m (<i>This time it means “yes”</i>)</p>
+
+<p><span class="smcap">Doctor.</span> Yes: the pulse <i>is</i> a little bit agitated. Have
+you been putting yourself to any unusual exertion lately?</p>
+
+<p><span class="smcap">Professor.</span> M—m! (<i>This melancholy moan of affirmation is
+emphasised by a motion of the head. And the</i> <span class="smcap">Professor’s</span>
+<i>eyes turn toward the chest</i>)</p>
+
+<p><span class="smcap">Doctor.</span> Ah! but you shouldn’t do that! you must take more care
+of yourself. Your heart isn’t what it was. Mustn’t expect it at your
+age. Now then, let’s see! (<i>Withdraws and examines thermometer</i>)</p>
+
+<p><span class="smcap">Professor.</span> Circumstances, over which I have no control,
+<i>caused</i> me to exert myself.</p>
+
+<p><span class="smcap">Doctor.</span> Well you know, there’s not much wrong. Temperature
+about normal.</p>
+
+<p><span class="smcap">Professor.</span> Doctor, a most extraordinary thing has just
+happened. I must tell you about it.</p>
+
+<p><span class="smcap">Doctor.</span> H’m—h’m? (<i>He sits down</i>)</p>
+
+<p><span class="smcap">Professor.</span> I was sitting here at my work—I was
+writing—there! as you see. Does that in any way look agitated?
+(<i>Shows him a paper</i>)</p>
+
+<p><span class="smcap">Doctor.</span> I should not say so.</p>
+
+<p><span class="smcap">Professor.</span> Does it make any sense?</p>
+
+<p><span class="smcap">Doctor.</span> “When all the objective data presented to
+sense-receptivity are compared, and the differentiations of their
+varying incentives and reactions properly allowed for—” Well, I should
+say so—not that I altogether understand it.</p>
+
+<p><span class="pagenum" id="Page_22">[Pg 22]</span></p>
+
+<p><span class="smcap">Professor.</span> No, but it is constructive?—Would you say the man
+who wrote that was out of his senses?</p>
+
+<p><span class="smcap">Doctor.</span> Most certainly not!</p>
+
+<p><span class="smcap">Professor.</span> I only wish to show that I was in the full
+possession of my faculties, my ordinary work-a-day mind.</p>
+
+<p><span class="smcap">Doctor.</span> Very well, Professor, I accept that.</p>
+
+<p><span class="smcap">Professor.</span> Well—Suddenly I glanced up, and there I saw a
+horrid little green thing looking at me—with eyes!</p>
+
+<p><span class="smcap">Doctor.</span> Yes: it would have eyes, if it was looking at you.</p>
+
+<p><span class="smcap">Professor.</span> Very curious eyes, Doctor,—like a young bird’s;
+and it had horns also—And—well, there it was, you know!—At first I
+didn’t believe it, I thought it was green tea—I tried to dismiss it
+from my mind altogether. But—it wouldn’t let me. Before I knew where I
+was, it—it spoke to me.</p>
+
+<p><span class="smcap">Doctor.</span> Did you speak to <i>it</i>?</p>
+
+<p><span class="smcap">Professor.</span> Yes, I did.</p>
+
+<p><span class="smcap">Doctor.</span> Fatal thing to do, Professor. Of course in that way
+you encouraged the—the phantasy.</p>
+
+<p><span class="smcap">Professor.</span> Ah, but it was not <i>I</i> who spoke first—At
+least I was only talking to myself. And suddenly it said—“Six, six,
+six, six, six,”—just like that!</p>
+
+<p><span class="smcap">Doctor.</span> Was that in answer to anything?</p>
+
+<p><span class="smcap">Professor.</span> Well, in a sort of way, yes—I had just said to
+myself: “Now, how many cups of green tea did I have this morning?”—And
+then it made the remark.</p>
+
+<p><span class="smcap">Doctor.</span> And six <i>was</i> the number?</p>
+
+<p><span class="smcap">Professor.</span> There, or thereabouts.</p>
+
+<p><span class="smcap">Doctor.</span> Very well, Professor. Now, better not think any more
+about it. I’ll make you up a prescription. And you had better quite
+knock off that green tea for a little while.</p>
+
+<p><span class="smcap">Professor.</span> But that’s not all, Doctor.</p>
+
+<p><span class="smcap">Doctor.</span> Do you think you need tell me any more?</p>
+
+<p><span class="pagenum" id="Page_23">[Pg 23]</span></p>
+
+<p><span class="smcap">Professor.</span> Yes. You don’t how <i>real</i> it seemed.</p>
+
+<p><span class="smcap">Doctor.</span> It would give you that impression.</p>
+
+<p><span class="smcap">Professor.</span> But even now.</p>
+
+<p><span class="smcap">Doctor.</span> Yes, yes. But there will be a reaction. That will pass.</p>
+
+<p><span class="smcap">Professor.</span> But—Doctor—I’m not satisfied.</p>
+
+<p><span class="smcap">Doctor.</span> You will be. Don’t dwell on it! You’ll get all right
+again. Don’t work too much at night, and don’t sit up late.</p>
+
+<p><span class="smcap">Professor.</span> I go to bed regularly every night at a quarter to
+ten.</p>
+
+<p><span class="smcap">Doctor.</span> Good! Then just for the present make it half-past nine.</p>
+
+<p><span class="smcap">Professor.</span> Doctor, I want to explain— At first, of course,
+I took the view that <i>you</i> take. I did not for a moment believe
+that such a thing could exist. I regarded it as an hallucination. But
+later on, it—well I came to think otherwise—It did such a lot of
+things—that I could not myself have conceived—and once it actually
+touched me. That was a great shock.</p>
+
+<p><span class="smcap">Doctor.</span> Yes, it would be, naturally. But you were indulging
+the——</p>
+
+<p><span class="smcap">Professor.</span> No, no, Doctor, I was <i>not</i>. I— Well, now
+what I want to tell you is this. When I began to think that there was
+something real about it after all, I—then, I’m sorry to say, I let
+myself go, and I pursued it—all over the room.</p>
+
+<p><span class="smcap">Doctor.</span> Any good?</p>
+
+<p><span class="smcap">Professor.</span> None whatever. I knocked over a few things, that’s
+all. I was picking them up just before you came in.</p>
+
+<p><span class="smcap">Doctor.</span> Well, and then?</p>
+
+
+<p class="hang">(<i>The</i> <span class="smcap">Professor’s</span> <i>eye travels toward the
+chest; but he is unable to confess himself quite honestly.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Then—it disappeared.</p>
+
+<p><span class="smcap">Doctor.</span> And you haven’t seen it since?</p>
+
+<p><span class="pagenum" id="Page_24">[Pg 24]</span></p>
+
+<p><span class="smcap">Professor.</span> No.</p>
+
+<p><span class="smcap">Doctor.</span> Nor heard it?</p>
+
+<p><span class="smcap">Professor.</span> I have not—. That is, <i>no</i>.</p>
+
+<p><span class="smcap">Doctor.</span> Well, then, that’s all right.</p>
+
+<p><span class="smcap">Professor.</span> I hope so. Doctor, I haven’t quite explained to
+you the shock it was to me. It was that terrible moment when I thought
+that, after all, there might be something in it! At that moment I saw
+all my life’s work disappear. All my science, all my philosophy—gone!
+Everything I had written—worth nothing!</p>
+
+<p><span class="smcap">Doctor.</span> Well, well, but don’t dwell on it!</p>
+
+<p><span class="smcap">Professor.</span> It was terrible!</p>
+
+<p><span class="smcap">Doctor.</span> But it wasn’t true.</p>
+
+<p><span class="smcap">Professor.</span> No— But for a moment it seemed true. That is
+really what—what gave me such a shock.</p>
+
+<p><span class="smcap">Doctor.</span> Well, it’s over. Now, don’t think any more of it. That
+is the best cure. You say you haven’t been sleepless?</p>
+
+<p><span class="smcap">Professor.</span> No—but I shall be.</p>
+
+<p><span class="smcap">Doctor.</span> Oh, no. We’ll see to that! I’ll send you the right
+thing. To-night you’ll sleep like a top. (<i>He gets up to go.</i>)</p>
+
+<p><span class="smcap">Professor.</span> Thank you. Good-bye. (<i>The</i> <span class="smcap">Doctor</span>
+<i>starts to go</i>) You don’t think that I’m really off my head, do
+you?</p>
+
+<p><span class="smcap">Doctor.</span> No, no, Nerves a little bit upset, that’s all!—a
+little too much work, a little too much sitting still, a little too
+much indoors—and a little too much green tea. Many a little makes a
+mickle.</p>
+
+<p><span class="smcap">Professor.</span> I don’t want it to occur again, Doctor.</p>
+
+<p><span class="smcap">Doctor.</span> It shan’t, sir, it shan’t! Now, good-bye; I must be
+off!</p>
+
+<p><span class="smcap">Professor.</span> Thank you. Good-bye. (<i>The</i> <span class="smcap">Doctor</span>
+<i>goes out. The</i> <span class="smcap">Professor</span> <i>stands looking at the
+chest</i>) And to think how I saw it go in there! (<i>He goes and
+stands by the chest; listens for a long time, then taps</i>) Is
+anyone—?—Is anything there?—Ah! That’s all right, then!—I hope.
+(<i>He goes<span class="pagenum" id="Page_25">[Pg 25]</span> back to his seat. Then his eye falls on the key; he takes
+hold of it, and is about to get up again. With an effort he sits back,
+letting the key go</i>) No, I will not!— But suppose—suppose it were
+there after all! No, no, no—. It wouldn’t do at all. Everybody would
+think that I was mad— Well, I must—I must try to get on with my work.
+(<i>He composes himself to write. Presently there enters an attractive
+little figure in a knitted cap, jersey, and skirt of bright green. This
+is</i> <span class="smcap">Elfrida</span>. <i>She advances very quietly, with a roguish
+smile, stops at the table and stands looking at him. Suddenly, with the
+tail of his eye, the</i> <span class="smcap">Professor</span> <i>catches sight of her.
+It gives him a dreadful start; but a look at her over the top of his
+glasses reassures him</i>) Effie! Why, Effie, my dear, what a start you
+gave me!</p>
+
+<p><span class="smcap">Elfrida.</span> (<i>Getting nearer the truth than she knows</i>) You
+thought I was a fairy.</p>
+
+<p><span class="smcap">Professor.</span> No, I didn’t think you were a fairy. I thought you
+were an hallucination!</p>
+
+<p><span class="smcap">Elfrida.</span> What’s that?</p>
+
+<p><span class="smcap">Professor.</span> Something that’s not real, my dear.</p>
+
+
+<p class="hang">(<span class="smcap">Elfrida</span> <i>has sidled round to the back of his chair;
+and now, from behind, she gives him an affectionate hug.</i>)</p>
+
+<p><span class="smcap">Elfrida.</span> <i>I’m</i> real.</p>
+
+<p><span class="smcap">Professor.</span> Thank God for that!— Well?</p>
+
+<p><span class="smcap">Elfrida.</span> Oh, Grandpapa, I’ve had such a lovely time! You got
+my letter?</p>
+
+<p><span class="smcap">Professor.</span> Yes, my dear— Oh, by the way, you’ve come just too
+late.</p>
+
+<p><span class="smcap">Elfrida.</span> What for?</p>
+
+<p><span class="smcap">Professor.</span> The Doctor, my dear. I wanted him to see you.</p>
+
+<p><span class="smcap">Elfrida.</span> Why?</p>
+
+<p><span class="smcap">Professor.</span> To tell me how you are.</p>
+
+<p><span class="smcap">Elfrida.</span> But I’m quite well—ever so well!</p>
+
+<p><span class="pagenum" id="Page_26">[Pg 26]</span></p>
+
+<p><span class="smcap">Professor.</span> I hope so, my dear, but one never knows.</p>
+
+<p><span class="smcap">Elfrida.</span> <i>I</i> do! And Grandpapa, you got my present,
+didn’t you?</p>
+
+<p><span class="smcap">Professor.</span> Your present?</p>
+
+<p><span class="smcap">Elfrida.</span> In my letter—What came off the tree that had fairies
+in it.</p>
+
+<p><span class="smcap">Professor.</span> Oh, yes, yes. It’s somewhere about here. (<i>He
+starts to search, then remembers</i>) Oh, no! It blew away:—it’s on
+the floor somewhere.</p>
+
+<p><span class="smcap">Elfrida.</span> And you <i>do</i> believe what I told you—don’t you,
+Grandpapa?</p>
+
+<p><span class="smcap">Professor.</span> Well—I’ve thought about it.</p>
+
+<p><span class="smcap">Elfrida.</span> It was <i>true</i>— I <i>saw</i> them! You must
+believe that!</p>
+
+<p><span class="smcap">Professor.</span> Well, I don’t know— One isn’t sure. So you’ve had
+a good time, eh?</p>
+
+<p><span class="smcap">Elfrida.</span> Grandpapa— If you could only make people <i>know</i>
+there were fairies, wouldn’t it be wonderful?</p>
+
+<p><span class="smcap">Professor.</span> I suppose it would be, my dear.</p>
+
+<p><span class="smcap">Elfrida.</span> But no one believes in them now, do they?</p>
+
+<p><span class="smcap">Professor.</span> No, not usually.</p>
+
+<p><span class="smcap">Elfrida.</span> Grandpapa, if you were ever able to find
+one—wouldn’t it be grand?</p>
+
+<p><span class="smcap">Professor.</span> Would it, my dear?</p>
+
+<p><span class="smcap">Elfrida.</span> Did you ever try?</p>
+
+<p><span class="smcap">Professor.</span> Once I did, for a short time. But if I were to, no
+one would believe me.</p>
+
+<p><span class="smcap">Elfrida.</span> Oh, but if you found it and showed it to them, they’d
+have to.</p>
+
+<p><span class="smcap">Professor.</span> Yes, I suppose they would, my dear.</p>
+
+<p><span class="smcap">Elfrida.</span> And then you’d be ever such a great person—much
+greater than you are now!</p>
+
+<p><span class="smcap">Professor.</span> But my dear, you—you don’t understand. If people
+were told that Professor Braintree believed in fairies—why, they would
+<i>laugh</i>!</p>
+
+<p><span class="pagenum" id="Page_27">[Pg 27]</span></p>
+
+<p><span class="smcap">Elfrida.</span> You’d laugh, too—but you could laugh longer than
+they would.</p>
+
+<p><span class="smcap">Professor.</span> Eh?</p>
+
+<p><span class="smcap">Elfrida.</span> Why, it would be like a miracle! People would begin
+to <i>love</i> fairies again, then.</p>
+
+<p><span class="smcap">Professor.</span> Well—perhaps. Green isn’t my favorite color.</p>
+
+<p><span class="smcap">Elfrida.</span> It’s funny your saying that! The fairy <i>I</i> saw
+was green.</p>
+
+<p><span class="smcap">Professor.</span> Was it?</p>
+
+<p><span class="smcap">Elfrida.</span> And it had long horns, and its mouth and eyes
+were just like a young bird’s (<i>This almost startles the</i>
+<span class="smcap">Professor</span> <i>out of his skin. Blinking and munching, he
+sits staring, while</i> <span class="smcap">Elfrida</span> <i>continues to deal her
+devastating blows</i>) And it ran round behind the tree, and when I got
+there, it was gone. If you’d been there, Grandpapa, to run round the
+other way——</p>
+
+<p><span class="smcap">Professor.</span> Run round?</p>
+
+<p><span class="smcap">Elfrida.</span> And if you’d had your butterfly net—(<i>This gives
+the</i> <span class="smcap">Professor</span> <i>a fresh jerk</i>) Why, we could have
+caught it!</p>
+
+<p><span class="smcap">Professor.</span> Well, I’m not so sure—? Perhaps.</p>
+
+<p><span class="smcap">Elfrida.</span> But, Grandpapa, you <i>are</i> believing what I tell
+you, aren’t you?— I saw it—<i>really</i> I did!</p>
+
+<p><span class="smcap">Professor.</span> I would like to believe it, my dear—It would make
+a great difference to my state of health. When you saw it, didn’t it
+upset you?</p>
+
+<p><span class="smcap">Elfrida.</span> No!</p>
+
+<p><span class="smcap">Professor.</span> It didn’t frighten you?</p>
+
+<p><span class="smcap">Elfrida.</span> No! Why?</p>
+
+<p><span class="smcap">Professor.</span> Not even when you ran after it?</p>
+
+<p><span class="smcap">Elfrida.</span> Why, no! Of course it ran, too. But it was quite nice
+about it.</p>
+
+<p><span class="smcap">Professor.</span> Was it, indeed?</p>
+
+<p><span class="smcap">Elfrida.</span> It made a noise at me—just like a bird—a nice bird.</p>
+
+<p><span class="smcap">Professor.</span> Did it say “Sick, sick, sick, sick?”</p>
+
+<p><span class="pagenum" id="Page_28">[Pg 28]</span></p>
+
+<p><span class="smcap">Elfrida.</span> No; it only went “Chewee! Chewee!”—just like that!</p>
+
+<p><span class="smcap">Professor.</span> Then I’m <i>not</i> mad after all!</p>
+
+<p><span class="smcap">Elfrida.</span> Grandpapa, what’s the matter?</p>
+
+<p><span class="smcap">Professor.</span> My dear—you would really <i>like</i> to see
+that—that thing again?</p>
+
+<p><span class="smcap">Elfrida.</span> Why, yes!</p>
+
+<p><span class="smcap">Professor.</span> Green, and with horns, and eyes?—Hear it again?</p>
+
+<p><span class="smcap">Elfrida.</span> Yes.</p>
+
+<p><span class="smcap">Professor.</span> Run after it again?—with a butterfly net?</p>
+
+<p><span class="smcap">Elfrida.</span> And catch it? Oh, yes!</p>
+
+<p><span class="smcap">Professor.</span> Well, my dear, there’s—there’s no accounting for
+tastes. But I begin to think that I’m not so mad as I thought I was.</p>
+
+<p><span class="smcap">Elfrida.</span> I never thought you were mad, Grandpapa.</p>
+
+<p><span class="smcap">Professor.</span> Thank you, my dear. I’m glad of that— Now, look
+here, you see that chest? This is the key to it— Now, will you go and
+open it? And don’t be afraid of anything you find in it—It’s all right.</p>
+
+
+<p class="hang">(<span class="smcap">Elfrida</span> <i>goes and opens the chest. And while she
+stands for a moment looking in, nonplussed, there is much more
+excitement in the</i> <span class="smcap">Professor’s</span> <i>demeanor than in
+hers.</i>)</p>
+
+<p><span class="smcap">Elfrida.</span> But, Grandpapa, there’s nothing! Oh! (<i>At
+this cry of discovery the strain on the</i> <span class="smcap">Professor’s</span>
+<i>feelings grows intense.</i> <span class="smcap">Elfrida</span> <i>stoops and picks up
+something</i>) Why, it’s the <i>leaf</i>!—The leaf of that tree what I
+sent you!— Oh!</p>
+
+<p><span class="smcap">Professor.</span> The leaf, you say?— Bring it here.</p>
+
+<p><span class="smcap">Elfrida.</span> And it’s all quite withered and dead! (<i>She brings
+it across to him, and the</i> <span class="smcap">Professor</span> <i>looks at it with
+curious eyes.</i>)</p>
+
+<p><span class="smcap">Professor.</span> So it is, to be sure!— Quite withered<span class="pagenum" id="Page_29">[Pg 29]</span> and dead.
+Well, there! Put it down, my dear, leave it alone!— And now you had
+better run away. I must get on with my work.</p>
+
+<p><span class="smcap">Elfrida.</span> What shall I do with it, Grandpapa?</p>
+
+<p><span class="smcap">Professor.</span> Put it in the waste-paper basket, my dear!— That’s
+right. Now, run away!</p>
+
+
+<p class="hang">(<i>And so the dead leaf drops to its repose on a bed of
+scrapped science shiftings. From that fairy-funeral</i>
+<span class="smcap">Elfrida</span> <i>turns, down-cast and sad, and with head
+bent and hands straight as though under some deep disgrace,
+goes softly out of the room. As the door closes behind her
+the</i> <span class="smcap">Professor</span> <i>gives a look into the waste-paper
+basket, then heaves a sigh of relief, and goes on with his
+work.</i>)</p>
+
+
+<p class="center p4"><i>Curtain.</i></p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter transnote">
+<h2 class="nobreak" id="Transcribers_Notes">Transcriber’s Notes</h2>
+
+<p>Obvious typographical errors have been silently corrected. Variations
+in hyphenation and accents have been standardised but all other
+spelling and punctuation remains unchanged.</p>
+
+</div>
+
+
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK BIRD IN HAND ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
